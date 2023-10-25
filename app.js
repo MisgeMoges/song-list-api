@@ -32,15 +32,11 @@ app.use(
     max: 60,
   })
 );
-const corsOptions = {
-  origin: "https://song-list-app.netlify.app/",
-  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-  credentials: true,
-};
+
 
 app.use(bodyParser.json({ limit: '5mb' })); 
 
-app.use(cors(corsOptions));
+app.use(cors());
 
 app.use(helmet());
 
