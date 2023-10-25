@@ -33,7 +33,7 @@ app.use(
   })
 );
 const corsOptions = {
-  origin: "http://localhost:3000",
+  origin: "https://song-list-app.netlify.app/",
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   credentials: true,
 };
